@@ -5,14 +5,13 @@ import Backdrop from "./components/Backdrop";
 function App() {
   return (
     <div>
-      <h1>My Todos</h1>
-      <div className="todos">
-        <Todo text='Learn React' />
-        <Todo text='Master React' />
-        <Todo text='Explore the full React course' />
-        <Todo text='Explore the full React course' />
+      <div className='header'>
+        <h1>My Todos ✅</h1>
+        <button className="goalbtn">+Add Goal</button>
       </div>
-    </div>
+      <hr style={{ width: '98%', height: '5px', background: "lightgray" }} />
+      <Todo />
+    </div >
   );
 }
 
