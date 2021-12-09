@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Todo from "./components/Todo";
-import Modal from "./components/Modal";
 import Backdrop from "./components/Backdrop";
 import Add from "./components/Add";
 function App() {

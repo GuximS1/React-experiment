@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import Backdrop from './Backdrop';
-import Modal from './Modal';
 import { Goal } from '../database/database';
+import Tod from './Tod';
 function Todo(props) {
 
     const [openModal, setOpenModal] = useState(false);
-
-    function deleteHandler() {
-        setOpenModal(true);
+    const [db, setDb] = useState([...Goal])
+    function deleteHandler(index) {
+        setDb((prev) => prev.filter((val) => val.id !== index));
     }
     function closeModalHandler() {
         setOpenModal(false);
@@ -15,19 +15,12 @@ function Todo(props) {
 
     return (
         <div className='positioning'>
-            {Goal.map((data, key) => {
+            {db?.map((data) => {
                 return (
-                    <div key={key} className='card'>
-                        <h2 style={{ textAlign: 'center' }}>{data.title}</h2>
-                        <div className='actions'>
-                            <input type="checkbox" />
-                            <button className='btnDelete' onClick={deleteHandler}>Delete</button>
-                        </div>
-                        {openModal && <Modal onCancel={closeModalHandler} onConfirm={closeModalHandler} />}
-                        {openModal && <Backdrop closeModal={closeModalHandler} />}
-                    </div>
+                    <Tod key={data.id} data={data} deleteHandler={deleteHandler} id={data.id} />
                 );
             })}
+
         </div>
     );
 
