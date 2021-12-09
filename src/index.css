@@ -101,9 +101,6 @@ h2 {
 }
 .actions {
   margin-top: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   text-align: center;
 }
 .btnDelete {
@@ -116,8 +113,12 @@ h2 {
   border: 1px solid #800040;
   max-height: 4ch;
   margin-top: 4ch;
+  margin-left: 10ch;
 }
 .cb {
   color: #39ff64;
   margin-top: 3ch;
+}
+input[type="checkbox"] {
+  transform: scale(4);
 }

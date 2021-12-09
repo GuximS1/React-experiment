@@ -20,7 +20,7 @@ function Todo(props) {
                     <div key={key} className='card'>
                         <h2 style={{ textAlign: 'center' }}>{data.title}</h2>
                         <div className='actions'>
-                            <h2 className='cb'>Completed<input type="checkbox" /></h2>
+                            <input type="checkbox" />
                             <button className='btnDelete' onClick={deleteHandler}>Delete</button>
                         </div>
                         {openModal && <Modal onCancel={closeModalHandler} onConfirm={closeModalHandler} />}
