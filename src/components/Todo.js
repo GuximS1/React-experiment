@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Backdrop from './Backdrop';
 import { Goal } from '../database/database';
 import Tod from './Tod';
+import Compelted from './Compelted';
 function Todo(props) {
 
     const [openModal, setOpenModal] = useState(false);

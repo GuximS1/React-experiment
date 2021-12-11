@@ -40,11 +40,7 @@ h2 {
 }
 
 .card {
-  background-color: white;
-  border-radius: 4px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  padding: 1.5rem;
-  width: 20rem;
+  position: relative;
 }
 
 .modal {
@@ -121,4 +117,22 @@ h2 {
 }
 input[type="checkbox"] {
   transform: scale(4);
+}
+.card1 {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  width: 20rem;
+}
+.card2 {
+  border-radius: 4px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
