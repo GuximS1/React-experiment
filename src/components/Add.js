@@ -19,7 +19,7 @@ const Add = (props) => {
                 <br />
                 <div className="btngroup">
                     <button className='btn btn--alt' onClick={cancelHandler}>Cancel</button>
-                    <button className='btn' onClick={confirmHandler}>Confirm</button>
+                    <input className='btn' type='submit' onClick={confirmHandler} />
                 </div>
             </div>
         </div>
