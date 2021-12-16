@@ -21,7 +21,6 @@ function Todo(props) {
                     <Tod key={data.id} data={data} deleteHandler={deleteHandler} id={data.id} />
                 );
             })}
-
         </div>
     );
 
