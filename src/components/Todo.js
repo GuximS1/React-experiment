@@ -1,15 +1,11 @@
 import React, { useState } from 'react'
 import Backdrop from './Backdrop';
-import { Goal } from '../database/database';
 import Tod from './Tod';
 import Compelted from './Compelted';
-function Todo(props) {
+function Todo({ db, deleteHandler }) {
 
     const [openModal, setOpenModal] = useState(false);
-    const [db, setDb] = useState([...Goal])
-    function deleteHandler(index) {
-        setDb((prev) => prev.filter((val) => val.id !== index));
-    }
+
     function closeModalHandler() {
         setOpenModal(false);
     }

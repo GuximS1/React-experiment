@@ -12,6 +12,7 @@ const Add = (props) => {
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log(inputs);
+        props.onConfirm(inputs);
         props.onCancel();
     };
 

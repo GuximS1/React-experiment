@@ -1,50 +1,27 @@
 export const Goal = [
     {
         id: 1,
-        title: 'React Course 0'
+        title: 'Drink water!'
     },
     {
         id: 2,
-        title: 'React Course 1'
+        title: 'Run 5km!'
     },
     {
         id: 3,
-        title: 'React Course 2'
+        title: 'Learn React!'
     },
     {
         id: 4,
-        title: 'React Course 3'
+        title: 'Read a book!'
     },
     {
         id: 5,
-        title: 'React Course 4'
+        title: 'Take a walk!'
     },
     {
         id: 6,
-        title: 'React Course 5'
+        title: 'Learn a new skill!'
     },
-    {
-        id: 7,
-        title: 'React Course 6'
-    },
-    {
-        id: 8,
-        title: 'React Course 7'
-    },
-    {
-        id: 9,
-        title: 'React Course 8'
-    },
-    {
-        id: 10,
-        title: 'React Course 9'
-    },
-    {
-        id: 11,
-        title: 'React Course 10'
-    },
-    {
-        id: 12,
-        title: 'React Course 11'
-    },
+
 ];
