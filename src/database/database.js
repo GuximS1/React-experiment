@@ -23,5 +23,13 @@ export const Goal = [
         id: 6,
         title: 'Learn a new skill!'
     },
+    {
+        id: 7,
+        title: 'Make your bed!'
+    },
+    {
+        id: 8,
+        title: 'Travel to a country!'
+    }
 
 ];
